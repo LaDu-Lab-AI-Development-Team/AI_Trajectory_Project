@@ -126,9 +126,13 @@ def main():
                 line_count+=1
         
         mousePath = standardize(mousePath)
-        
+       
+        # for node in mousePath:
+        #     print(node.to_string())
+            
         if (spatialDirect(mousePath)):
             outputCont.write(pathNode.state + "," + "Spatial Direct" + "\n")  
+            
         elif (spatialIndirect(mousePath)):
             outputCont.write(pathNode.state + "," + "Spatial Indirect" + "\n")
             

@@ -54,3 +54,7 @@ class MouseInfoNode():
         self.sw = sw
         self.se = se
         self.perimeter = perimeter
+    
+    def to_string(self):
+        output = self.time + ", " + self.x + ", " + self.y + ", " + self.inPlatform + ", " + self.nw + ", " + self.ne + ", " + self.sw + ", " + self.se + ", " + self.perimeter
+        return output
